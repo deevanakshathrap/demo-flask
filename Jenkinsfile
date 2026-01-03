@@ -83,7 +83,7 @@ EOF
     post {
         success {
             echo "=== Deployment successful! ==="
-            echo "Visit: http://13.233.146.57:5000"
+            echo "Visit: http://3.109.122.78:5000"
         }
         failure {
             echo "=== Deployment failed — check Jenkins logs ==="
