@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        FLASK_EC2 = "ubuntu@3.109.122.78"
+        FLASK_EC2 = "ubuntu@3.110.218.64"
         APP_DIR  = "/home/ubuntu/flask-app"
         SSH_KEY  = "/var/lib/jenkins/.ssh/id_ed25519"
     }
@@ -83,7 +83,7 @@ EOF
     post {
         success {
             echo "=== Deployment successful! ==="
-            echo "Visit: http://3.109.122.78:5000"
+            echo "Visit: http://3.110.218.64:5000"
         }
         failure {
             echo "=== Deployment failed — check Jenkins logs ==="
